@@ -1,3 +1,8 @@
+/**
+ * NOTE!
+ * const results = await User.findAll({where: {name: }})
+ */
+
 const { Sequelize } = require("sequelize");
 const cors = require("cors");
 const helmet = require("helmet");
@@ -16,7 +21,7 @@ const app = express();
 (async () => {
   await init(sequelize);
 
-  app.use(cors());
+  app.use(cors({ origin }));
   app.use(helmet());
   app.use(express.json());
 
