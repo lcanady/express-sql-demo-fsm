@@ -1,7 +1,7 @@
 {
   "name": "express-sql-demo",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is a description",
   "main": "index.js",
   "scripts": {
     "start": "nodemon index"
